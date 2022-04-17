@@ -20,25 +20,23 @@
   <body>
     <!--Верхня лінія-->
     <header class="header">
-      <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
-            <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
-            <ul class="top-list">
-              <li><a href="./index.html" class="top-line active">Студія</a></li>
-              <li><a href="./portfolio.html" class="top-line">Портфоліо</a></li>
-              <li><a href="" class="top-line">Контакти</a></li>
-            </ul>
-          </nav>
-          <ul class="top-list-info">
-            <li>
-              <a href="mailto:info@devstudio.com" class="info">info@devstudio.com</a>
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="info">+38 096 111 11 11</a>
-            </li>
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
+          <ul class="top-list">
+            <li class="top-line-box"><a href="./index.html" class="top-line active">Студія</a></li>
+            <li class="top-line-box"><a href="./portfolio.html" class="top-line">Портфоліо</a></li>
+            <li class="top-line-box"><a href="" class="top-line">Контакти</a></li>
           </ul>
-        </div>
+        </nav>
+        <ul class="top-list-info">
+          <li class="top-info-box">
+            <a href="mailto:info@devstudio.com" class="info">info@devstudio.com</a>
+          </li>
+          <li class="top-info-box">
+            <a href="tel:+380961111111" class="info">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -56,7 +54,7 @@
       <!--Особенности-->
       <section class="peculiarities-sec">
         <div class="container">
-          <h2></h2>
+          <h2 class="hidden">Особенности</h2>
           <ul class="peculiarities">
             <li class="peculiarities-lsit">
               <h3 class="peculiarities-headers">Внимание к деталям</h3>
@@ -92,13 +90,13 @@
           <h2 class="we-doing">Чем мы занимаемся</h2>
           <ul class="we-doing-list">
             <li class="we-doing-box">
-              <img src="./images/box1.jpg" alt="Изучаем технологии" width="370" />
+              <img src="./images/studio/we-doing/box1.jpg" alt="Изучаем технологии" width="370" />
             </li>
             <li class="we-doing-box">
-              <img src="./images/box2.jpg" alt="подбираем варианты" width="370" />
+              <img src="./images/studio/we-doing/box2.jpg" alt="подбираем варианты" width="370" />
             </li>
             <li class="we-doing-box">
-              <img src="./images/box3.jpg" alt="Внимание к деталям" width="370" />
+              <img src="./images/studio/we-doing/box3.jpg" alt="Внимание к деталям" width="370" />
             </li>
           </ul>
         </div>
@@ -109,42 +107,34 @@
         <div class="container">
           <h2 class="title-team">Наша команда</h2>
           <ul class="our-team-list">
-            <nav class="our-team-nav">
-              <li class="our-team-box">
-                <img src="./images/img.jpg" alt="мужик" width="270" />
-                <div class="our-team-about">
-                  <h3 class="team">Игорь Демьяненко</h3>
-                  <p class="team-position">Product Designer</p>
-                </div>
-              </li>
-            </nav>
-            <nav class="our-team-nav">
-              <li class="our-team-box">
-                <img src="./images/img1.jpg" alt="женщина" width="270" />
-                <div class="our-team-about">
-                  <h3 class="team">Ольга Репина</h3>
-                  <p class="team-position">Frontend Developer</p>
-                </div>
-              </li>
-            </nav>
-            <nav class="our-team-nav">
-              <li class="our-team-box">
-                <img src="./images/img2.jpg" alt="мужик" width="270" />
-                <div class="our-team-about">
-                  <h3 class="team">Николай Тарасов</h3>
-                  <p class="team-position">Marketing</p>
-                </div>
-              </li>
-            </nav>
-            <nav class="our-team-nav">
-              <li class="our-team-box">
-                <img src="./images/img3.jpg" alt="мужик" width="270" />
-                <div class="our-team-about">
-                  <h3 class="team">Михаил Ермаков</h3>
-                  <p class="team-position">UI Designer</p>
-                </div>
-              </li>
-            </nav>
+            <li class="our-team-box">
+              <img src="./images/studio/our-team/img.jpg" alt="мужик" width="270" />
+              <div class="our-team-about">
+                <h3 class="team">Игорь Демьяненко</h3>
+                <p class="team-position">Product Designer</p>
+              </div>
+            </li>
+            <li class="our-team-box">
+              <img src="./images/studio/our-team/img1.jpg" alt="женщина" width="270" />
+              <div class="our-team-about">
+                <h3 class="team">Ольга Репина</h3>
+                <p class="team-position">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="our-team-box">
+              <img src="./images/studio/our-team/img2.jpg" alt="мужик" width="270" />
+              <div class="our-team-about">
+                <h3 class="team">Николай Тарасов</h3>
+                <p class="team-position">Marketing</p>
+              </div>
+            </li>
+            <li class="our-team-box">
+              <img src="./images/studio/our-team/img3.jpg" alt="мужик" width="270" />
+              <div class="our-team-about">
+                <h3 class="team">Михаил Ермаков</h3>
+                <p class="team-position">UI Designer</p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -153,7 +143,7 @@
     <footer class="footer">
       <div class="container">
         <a href="" class="logo-footer"><span class="logo-color">Web</span>Studio</a>
-        <address>
+        <address class="foter-address">
           <ul class="footer-list">
             <li class="footer-box"><a href="" class="home">г. Киев, пр-т Леси Украинки, 26</a></li>
             <li class="footer-box">
