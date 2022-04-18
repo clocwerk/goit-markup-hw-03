@@ -59,10 +59,19 @@ p {
   margin-right: auto;
   /* outline: 1px solid red; */
 }
-.hidden {
-  visibility: hidden;
-}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*шапка*/
 
 .header {
@@ -97,11 +106,7 @@ p {
 .top-list {
   display: flex;
 }
-.top-line-box {
-  padding-bottom: 32px;
-  padding-top: 32px;
-  display: inline-block;
-}
+
 .top-line-box:not(:last-of-type) {
   margin-right: 50px;
 }
@@ -109,6 +114,9 @@ p {
   font-weight: 500;
   color: var(--text-color);
   text-decoration: none;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  display: inline-block;
 }
 
 .top-list-info {
@@ -339,6 +347,9 @@ p {
 
 
 */
+.portfolio-box a {
+  text-decoration: none;
+}
 .portfolio-sec {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -400,6 +411,7 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  color: var(--text-color);
 }
 
 .secondary-tex {
